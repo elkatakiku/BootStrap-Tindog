@@ -1,36 +1,41 @@
-#title {
-  background-color: #ff4c68;
-  color: white;
-}
-
-.container-fluid {
-  padding: 3% 15% 7%;
-}
-
 body {
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-h1 {
-  /* font-family: 'Montserrat', sans-serif; */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p {
+  color: #8f8f8f;
+}
+
+/* Headings */
+.big-heading {
   font-size: 3.5rem;
   font-weight: 900;
   line-height: 1.5;
 }
 
-h2 {
+.section-heading {
   font-size: 3rem;
-  font-weight: 700;
   line-height: 1.5;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 1.5rem;
+/* Containers */
+.container-fluid {
+  padding: 7% 15%;
 }
 
-p {
-  color: #8f8f8f;
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
 }
 
 /* Navigation Bar */
@@ -58,6 +63,12 @@ p {
   margin: 5% 3% 5% 0;
 }
 
+/* Title Section */
+#title .container-fluid {
+  padding-top: 3%;
+  text-align: left;
+}
+
 /* Title Image */
 .title-img {
   width: 60%;
@@ -70,10 +81,14 @@ p {
 
 /* Features Section */
 #features {
-  background-color: white;
-  padding: 7% 15%;
   position: relative;
   /* z-index: 1; */
+}
+
+/* Features Box */
+.feature-box {
+  margin: 2rem 0;
+  padding: 5%;
 }
 
 /* Features Icons */
@@ -86,18 +101,18 @@ p {
   color: #ff4c68;
 }
 
-/* Features Box */
-.feature-box {
-  margin: 2rem 0;
-  padding: 5%;
-  text-align: center;
+.feature-title {
+  font-size: 1.5rem;
 }
 
 /* Testimonial Section */
 #testimonials {
   background-color: #ef8172;
-  color: white;
-  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /* Testimonial Image */
@@ -107,15 +122,10 @@ p {
   width: 10%;
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 /* Press Section */
 #press {
   background-color: #ef8172;
   padding-bottom: 3%;
-  text-align: center;
 }
 
 /* Press Logo */
@@ -127,9 +137,32 @@ p {
 /* Pricing Section */
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Call to Action Section */
+/* Footer */
+.footer-icon {
+  color: gray;
+  margin: 20px 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+  }
 }
